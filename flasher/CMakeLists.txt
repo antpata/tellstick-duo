@@ -8,9 +8,9 @@ ADD_EXECUTABLE(tellstickduo-flasher
   ${SRCS}
 )
 
-FIND_LIBRARY(FTD2XX_LIBRARY ftd2xx)
+FIND_LIBRARY(FTDI_LIBRARY ftdi)
 
 TARGET_LINK_LIBRARIES(tellstickduo-flasher
-	${FTD2XX_LIBRARY}
+	${FTDI_LIBRARY}
 )
 
